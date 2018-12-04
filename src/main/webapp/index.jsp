@@ -6,5 +6,6 @@
 <br>
 </center>
 <a href="welcomeController.htm">Show welcome message</a>
+<a href="searchByAuthor.jsp">Search Book By Author</a>
 </body>
 </html>

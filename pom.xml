@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.packt.ch06</groupId>
-    <artifactId>Ch06_Demo_SpringMVC</artifactId>
+    <artifactId>ReadMyBooks</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>Ch06_Demo_SpringMVC Maven Webapp</name>
+    <name>ReadMyBooks</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -75,34 +75,17 @@
             <scope>runtime</scope>
         </dependency>
 
-
-<!--        <dependency>
+        <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
-            &lt;!&ndash;version>2.0.2</version&ndash;&gt;
+            <!-- <version>${log4j2.version}</version> -->
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            &lt;!&ndash;version>2.0.2</version&ndash;&gt;
+            <!-- <version>${log4j2.version}</version> -->
         </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j-impl</artifactId>
-            &lt;!&ndash;version>2.0.2</version&ndash;&gt;
-        </dependency>-->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>jcl-over-slf4j</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -118,8 +101,8 @@
     </dependencies>
 
     <build>
-        <finalName>Ch06_Demo_SpringMVC</finalName>
-        <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+        <finalName>ReadMyBooks</finalName>
+        <pluginManagement>            <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>
                     <artifactId>maven-clean-plugin</artifactId>
@@ -159,7 +142,21 @@
                         <path>/</path>
                     </configuration>
                 </plugin>
-
+                <plugin>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-maven-plugin</artifactId>
+<!--                     <version>9.4.1.v20170120</version>
+                    <configuration>
+                        <jvmArgs>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=1044</jvmArgs>
+                        <stopKey>CTRL+C</stopKey>
+                        <stopPort>8999</stopPort>
+                        <scanIntervalSeconds>10</scanIntervalSeconds>
+                        <webAppSourceDirectory>${basedir}/src/main/webapp/</webAppSourceDirectory>
+                        <webAppConfig>
+                            <descriptor>${basedir}/src/main/webapp/WEB-INF/web.xml</descriptor>
+                        </webAppConfig>
+                    </configuration> -->
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
