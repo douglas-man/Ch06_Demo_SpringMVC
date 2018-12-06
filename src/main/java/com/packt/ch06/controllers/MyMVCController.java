@@ -1,10 +1,15 @@
 package com.packt.ch06.controllers;
 
+import com.packt.ch06.beans.Book;
 import org.springframework.stereotype.Controller;
 
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class MyMVCController {
@@ -14,4 +19,5 @@ public class MyMVCController {
 		String welcome_message="Welcome to the wonderful world of Books!!!";
 		return new ModelAndView("welcome","message",welcome_message);
 	}
+
 }

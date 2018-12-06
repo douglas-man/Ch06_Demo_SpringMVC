@@ -2,9 +2,9 @@ package com.packt.ch06.beans;
 
 public class Book {
 	private String bookName;
-	private long ISBN;
+	private Long ISBN;
 	private String publication;
-	private int price;
+	private Integer price;
 	private String description;
 	private String author;
 	
@@ -36,11 +36,11 @@ public class Book {
 		this.bookName = bookName;
 	}
 
-	public long getISBN() {
+	public Long getISBN() {
 		return ISBN;
 	}
 
-	public void setISBN(long iSBN) {
+	public void setISBN(Long iSBN) {
 		ISBN = iSBN;
 	}
 
@@ -52,11 +52,11 @@ public class Book {
 		this.publication = publication;
 	}
 
-	public int getPrice() {
+	public Integer getPrice() {
 		return price;
 	}
 
-	public void setPrice(int price) {
+	public void setPrice(Integer price) {
 		this.price = price;
 	}
 
