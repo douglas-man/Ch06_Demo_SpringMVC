@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.packt.ch06</groupId>
-    <artifactId>Ch06_Demo_SpringMVC</artifactId>
+    <artifactId>ReadMyBooks</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>Ch06_Demo_SpringMVC Maven Webapp</name>
+    <name>ReadMyBooks</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
